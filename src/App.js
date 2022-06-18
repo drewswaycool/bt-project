@@ -5,8 +5,8 @@ import OrganizationHeader from './components/OrganizationHeader';
 import Repos from './components/Repos';
 import Members from './components/Members';
 import Events from './components/Events';
-// import WebHooks from './components/WebHooks';
-// import Issues from './components/Issues';
+import WebHooks from './components/WebHooks';
+import Issues from './components/Issues';
 import Dashboard from './components/Dashboard';
 
 function App() {
@@ -23,12 +23,12 @@ function App() {
        <Card title="Members">
         <Members endpoint="https://api.github.com/orgs/BoomTownROI/members"/>
       </Card>
-        {/* <Card title="WebHooks">
+        <Card title="WebHooks">
           <WebHooks endpoint="https://api.github.com/orgs/BoomTownROI/hooks"/>
         </Card>
         <Card title="Issues">
           <Issues endpoint="https://api.github.com/orgs/BoomTownROI/issues"/>
-        </Card> */}
+        </Card>
       </Dashboard>
     </div>
   );
